@@ -11,5 +11,5 @@ const completeEl = document.getElementById("complete");
 const completeElInfo = document.getElementById("complete-info");
 const completeBtn = document.getElementById("complete-button");
 
-const today = new Date().toISOString();
-console.log(typeof today);
+const today = new Date().toISOString().split("T")[0];
+dateEl.setAttribute("min", today);
